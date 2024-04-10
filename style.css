@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS para index, header, footer y títulos generales*/
+.navegador{
+    background-color: rgb(193, 198, 220);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    gap: 750px;
+    padding: 10px 30px 1px 30px ;
+}
+.logo-superior{
+    width: 15%;
+    padding-left: 20px;
+}
+.links-nav{
+    list-style: none;
+    display: flex;
+    justify-content:end;
+    gap: 40px;
+    text-decoration: none;
+}
+.link-nav{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 400;   
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+.link-nav a{
+    display: block;
+    text-decoration: none;
+}
+.portada{
+    background-color: rgb(193, 198, 220);
+    width: 100%;
+    height: 500px;
+    padding: 100px 80px 20px 80px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: "img1 img2 img4 img5"
+                         "img1 img2 img4 img5"
+                         "img1 img3 img3 img5"
+                         "img6 img6 img7 img7"
+                         "img6 img6 img7 img7";
+}
+.portada img{
+    width: 75%;
+    height: 75%;
+    object-fit:scale-down;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+.img7{
+    grid-area: img7;
+}
+/*header*/
+.herr-y-eq{
+    display: flex;
+    justify-content: center;
+    padding:10px 50px;
+    gap: 75px;
+    background-color: rgb(193, 198, 220);
+}
+.myh{
+    width: 350px;
+    height: 280px;
+    background-color: rgb(58, 68, 77);
+    position: relative;
+    padding-left: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    border: solid 1px black
+}
+.titulo-servicio1{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #dcdfe4;
+    font-weight: 400;   
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    margin-left: 35px;   
+}
+.img-myh{
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 15px;
+}
+.equipos{
+    width: 350px;
+    height: 280px;
+    background-color: rgb(58, 68, 77);
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    border-radius: 10px;
+    border: 1px solid black
+}
+.titulo-servicio2{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: #dcdfe4;
+    font-weight: 400;   
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 5px;
+    margin-left: 135px;
+}
+.img-equipos{
+    width: 90%;
+    padding-top: 28px;
+    padding-left: 40px;
+   
+}
+/*footer*/
+.pie-de-pagina{
+    background-color: rgb(58, 68, 77);
+    width: 100%;
+    position:static;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 25px 15px 100px ;
+}
+.titulo-footer{
+    color: rgb(180, 180, 228);
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    height: 5px;
+    padding-bottom: 30px;
+}
+.parrafo1-footer{
+    color: black;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    height: 1px;
+    padding-bottom: 15px;
+}
+.parrafo2-footer{
+    color: black;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-align: center;
+    height: 1px;
+    padding-bottom: 15px;
+}
+.link-jd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+/* CSS aplicado a NOSOTROS*/
+.container-nos{
+    padding: 10px 10px 10px 10px;
+}
+.titulo-nos{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+.parrafo1-nos{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+.parrafo2-nos{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+.parrafo3-nos{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+/*CSS aplicado a contacto*/
+/*ver estilo del formulario de correo*/
+.container-cont{
+    display: flex;
+    justify-content: center;
+}
+.titulo-cont{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+.form-cont{
+    align-items: center;
+}
+.parrafo1-contacto{
+    color: black;
+    font-family: Verdana;
+    text-align: left;
+    height: 3%;
+    padding: 20px 15px;
+}
+.parrafo2-contacto{
+    color: black;
+    font-family: Verdana;
+    text-align: left;
+    height: 3%;
+    padding: 20px 15px;
+}
+.parrafo3-contacto{
+    color: black;
+    font-family: Verdana;
+    text-align: left;
+    height: 3%;
+    padding: 20px 15px;
+}
+.parrafo4-contacto{
+    color: black;
+    font-family: Verdana;
+    text-align: left;
+    height: 3%;
+    padding: 20px 15px;
+}
